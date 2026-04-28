@@ -10,3 +10,17 @@ class date:
 d = date(26, 4, 2026)
 print(d.info())
 
+print(d.day, d.month, d.year)
+
+class date:
+    def __init__(self, day, month, year):
+        self.day = day
+        self.month = month
+        self.year = year
+
+    def info(self):
+        return f'{self.day} {self.month} {self.year}'
+
+d = date(26, 4, 2026)
+print(d.info())
+
